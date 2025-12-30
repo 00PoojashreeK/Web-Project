@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register - Face paint</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Register for The face Painting Challenge</h1>
+     </header>
+  <main>
+    <section>
+           <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Student Name" required /><br /><br />
+        <input type="text" placeholder="Enrollment Number" required /><br /><br />
+        <input type="email" placeholder="College Email ID" required /><br /><br />
+        <button type="submit">Submit Registration</button>
+      </form>
+ 
+       <a href="events.html">← Back to Events</a>
+
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Campus Events</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thanks for registering for The Face Painting Challenge! See you there!");
+    }
+  </script>
+</body>
+</html> 
+

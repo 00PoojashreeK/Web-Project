@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+   <style>
+    section h2 {
+    color: #FFDB58; 
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <img src="logo.src" alt="University Logo" class="logo" />
+    <h1>Contact & Feedback</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main> 
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> <a href="https://www.amity.edu/bengaluru" style="color:#00bfff;">info@campusconnect.edu</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+917303-399-000" style="color:#00bfff;">+91 7303-399-000</a></p>
+      <p><strong>Address:</strong> Amity University, Bangalore Campus</p>
+    </section>
+    
+    <section>
+    <h2> Send Us Your Feedback </h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Campus Contact & Feedback</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert('Thank you for your response!');
+    }
+  </script>
+</body>
+</html> 
+
